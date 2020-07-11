@@ -65,6 +65,7 @@
         <button data-modal-open class="hero-button link">
           Заказать услугу
         </button>
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form class="js-speaker-form">
@@ -128,17 +129,27 @@
                 <label for="" class="comment-lable">Комментарий</label>
               </div>
 
-              <span class="form-coditions"
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="contract-conditions" href=""
-                  >Условия договора</a
-                ></span
-              >
+              <div class="form-conditions">
+                <label for="policy" class="policy-lable">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                    class="checkbox"
+                  />
+                  <span class="icon-checked"></span>Соглашаюсь с рассылкой и
+                  принимаю
+                  <a class="contract-conditions" href="">
+                    Условия договора</a
+                  ></label
+                >
+              </div>
+
+              <div class="form-button">
+                <button class="accept-button">Принять</button>
+              </div>
             </form>
 
-            <!-- <p class="form-test">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p> -->
             <button data-modal-close class="close-button">
               <svg class="icon-close">
                 <use href="./img/symbol-defs2.svg#icon-close"></use>
@@ -542,7 +553,16 @@
         <div class="subscribe">
           <b class="subtitle">Подпишитесь на рассылку</b>
           <div class="buttons-block">
-            <div class="email-button"></div>
+            <div class="email-button">
+              <input
+                type="imail"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+                class="form-input"
+              />
+              <label for="mail" class="form-lable"></label>
+            </div>
             <a class="footer-button link" href=""
               >Подписаться
               <svg class="icon-send">
