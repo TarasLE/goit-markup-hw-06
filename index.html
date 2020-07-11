@@ -61,12 +61,39 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a class="hero-button link" href="">Заказать услугу</a>
+
+        <button data-modal-open class="hero-button link">
+          Заказать услугу
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <form class="js-speaker-form form-test">
+              <h1 class="title">
+                Оставьте свои данные, мы вам перезвоним
+              </h1>
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                  class="form-input"
+                />
+                <label for="name" class="form-lable">Имя</label>
+              </div>
+            </form>
+
+            <!-- <p class="form-test">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p> -->
+            <button data-modal-close>Закрыть</button>
+          </div>
+        </div>
       </section>
 
       <section class="advantage">
         <!-- Скрытый заголовок H2 -->
-        <h2 class="visibility">Приемущества</h2>
+        <h2 class="is-hidden">Приемущества</h2>
 
         <ul class="container">
           <li class="advantage-card">
@@ -472,5 +499,21 @@
         <p class="text">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
