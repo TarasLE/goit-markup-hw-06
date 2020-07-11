@@ -56,7 +56,7 @@
     </header>
     <main>
       <!-- скрытый зоголовок  -->
-      <h1 class="visibility">Портфолио</h1>
+      <h1 class="is-hidden">Портфолио</h1>
       <div class="portfolio">
         <ul class="portfolio-buttons container">
           <li><button type="button" class="portfolio-button">Все</button></li>
@@ -216,14 +216,15 @@
           <span class="logo">
             <span class="logo-colored"> Web</span> Studio</span
           >
-          <br />
-          <span class="location text">г. Киев, пр-т Леси Украинки, 26</span>
-          <br />
-          <a class="link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <br />
-          <a class="link" href="tel:380961111111">+38 096 111 11 11 </a>
+          <div class="location">
+            <span class="location text">г. Киев, пр-т Леси Украинки, 26 </span>
+
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+
+            <a class="link" href="tel:380961111111">+38 096 111 11 11 </a>
+          </div>
         </address>
 
         <div class="connect">
@@ -271,7 +272,16 @@
         <div class="subscribe">
           <b class="subtitle">Подпишитесь на рассылку</b>
           <div class="buttons-block">
-            <div class="email-button"></div>
+            <div class="email-button">
+              <input
+                type="imail"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+                class="form-input"
+              />
+              <label for="mail" class="form-lable"></label>
+            </div>
             <a class="footer-button link" href=""
               >Подписаться
               <svg class="icon-send">
