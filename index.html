@@ -67,7 +67,7 @@
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <form class="js-speaker-form form-box">
+            <form class="js-speaker-form">
               <h1 class="title">
                 Оставьте свои данные, мы вам перезвоним
               </h1>
@@ -128,7 +128,7 @@
                 <label for="" class="comment-lable">Комментарий</label>
               </div>
 
-              <span
+              <span class="form-coditions"
                 >Соглашаюсь с рассылкой и принимаю
                 <a class="contract-conditions" href=""
                   >Условия договора</a
@@ -139,7 +139,11 @@
             <!-- <p class="form-test">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p> -->
-            <button data-modal-close>Закрыть</button>
+            <button data-modal-close class="close-button">
+              <svg class="icon-close">
+                <use href="./img/symbol-defs2.svg#icon-close"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
