@@ -67,7 +67,7 @@
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <form class="js-speaker-form form-test">
+            <form class="js-speaker-form form-box">
               <h1 class="title">
                 Оставьте свои данные, мы вам перезвоним
               </h1>
@@ -80,7 +80,60 @@
                   class="form-input"
                 />
                 <label for="name" class="form-lable">Имя</label>
+
+                <svg class="icon-formbox">
+                  <use href="./img/symbol-defs2.svg#icon-person-black"></use>
+                </svg>
               </div>
+
+              <div class="form-field">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                  class="form-input"
+                />
+                <label for="tel" class="form-lable">Телефон</label>
+
+                <svg class="icon-formbox">
+                  <use href="./img/symbol-defs2.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <input
+                  type="imail"
+                  name="mail"
+                  id="mail"
+                  placeholder=" "
+                  class="form-input"
+                />
+                <label for="mail" class="form-lable">Почта</label>
+
+                <svg class="icon-formbox">
+                  <use href="./img/symbol-defs2.svg#icon-email-black"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <textarea
+                  placeholder=" "
+                  name=""
+                  id=""
+                  cols=""
+                  rows=""
+                  class="input-comments"
+                ></textarea>
+                <label for="" class="comment-lable">Комментарий</label>
+              </div>
+
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="contract-conditions" href=""
+                  >Условия договора</a
+                ></span
+              >
             </form>
 
             <!-- <p class="form-test">
